@@ -4,10 +4,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import Home from './pages/Home';
-import AllProducts from './pages/AllProducts';
-import ProductDetail from './pages/ProductDetail';
-import NewProduct from './pages/NewProduct';
-import MyCart from './pages/MyCart';
+import Online from './pages/Online/Online';
+import Menu from './pages/Menu/Menu';
+import Store from './pages/Store/Store';
+import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
 const router = createBrowserRouter([
@@ -17,19 +17,31 @@ const router = createBrowserRouter([
     errorElement: <NotFound />,
     children: [
       { index: true, path: '/', element: <Home /> },
-      { path: '/products', element: <AllProducts /> },
-      {
-        path: '/products/new',
-        element: <NewProduct />,
+      { 
+        path: '/online', 
+        element: <Online /> 
       },
       {
-        path: '/products/:id',
-        element: <ProductDetail />,
+        path: '/menu',
+        element: <Menu />,
       },
       {
-        path: '/carts',
-        element: <MyCart />,
+        path: '/store',
+        element: <Store />,
       },
+      {
+        path: '/contact',
+        element: <Contact />,
+      },
+      // {
+      //   path: '/products/new',
+      //   element: <NewProduct />,
+      // },
+      // {
+      //   path: '/products/:id',
+      //   element: <ProductDetail />,
+      // }, path 설정 예시
+      // 여기서 경로 설정하면 너무 복잡하니까 각 페이지가서 추가 경로 설정할 것, 여기서는 메인페이지만
     ],
   },
 ]);

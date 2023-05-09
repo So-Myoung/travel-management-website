@@ -1,0 +1,27 @@
+import React from 'react';
+
+export default function Menu() {
+  return (
+      <div class="container">
+        <div class="row">
+          <div class="col" >
+            <img src ="https://codingapple1.github.io/shop/shoes1.jpg" width="80%"/>
+            <h4>상품명</h4>
+            <p>상품설명</p>
+            </div>
+          <div class="col" >
+            <img src ="https://codingapple1.github.io/shop/shoes2.jpg" width="80%"/>
+            <h4>상품명</h4>
+            <p>상품설명</p>
+          </div>
+          <div class="col" >
+            <img src ="https://codingapple1.github.io/shop/shoes2.jpg" width="80%"/>
+            <h4>상품명</h4>
+            <p>상품설명</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+

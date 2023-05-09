@@ -1,0 +1,23 @@
+import React from 'react';
+import  {Container,Row,Col}  from 'react-bootstrap';
+import { useParams } from 'react-router-dom';
+import data from '../Menu/data'
+import Nav from 'react-bootstrap/Nav';
+
+export default function Menu(props) {
+  let {id} = useParams();
+    return (
+      <div className="col-md-4">
+      <Nav.Link href={'menu/'+props.shoes} style={{display:'inline-block'}}>
+      <img src={"../shoes1.png"} width="50%" height="100px"/>
+      </Nav.Link>
+      <h4>{props.shoes[id].title}</h4>
+      <p>{props.shoes[id].content}</p>
+      <p>{props.shoes[id].price}</p>
+
+    </div>
+      )
+}
+
+  
+

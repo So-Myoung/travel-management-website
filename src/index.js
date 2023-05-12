@@ -8,6 +8,7 @@ import Online from './pages/Online/Online';
 import Menu from './pages/Menu/Menu';
 import Store from './pages/Store/Store';
 import Contact from './pages/Contact';
+import Login from './pages/Login';
 import NotFound from './pages/NotFound';
 
 const router = createBrowserRouter([
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact />,
+      },
+      {
+        path: '/login',
+        element: <Login />,
       },
       // {
       //   path: '/products/new',

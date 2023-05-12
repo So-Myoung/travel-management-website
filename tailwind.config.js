@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         brand: '#D9D3D1',
-        brand_dark: '#5b5352',
+        brand_dark: '#83695F',
         menu_hover: '#84646D', 
       },
       backgroundImage: {

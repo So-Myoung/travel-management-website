@@ -45,7 +45,7 @@ export default function Navbar() {
     //   </nav>
     // </header>
     <>
-  <nav className="relative px-4 py-6 flex justify-between items-center bg-brand">
+  <nav className="relative px-4 py-4 flex justify-between items-center bg-brand">
     <Link to='/' className='flex items-center text-3xl font-bold leading-none text-brand_dark hover:text-gray-900'>
       <img src={CoffeeLogo} className="w-20"/>
     </Link>
@@ -147,28 +147,14 @@ export default function Navbar() {
         </svg>
       </li>
     </ul>
-    {!user && <button onClick={handleLogin}>      
-    <p
-      className="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-100 hover:bg-gray-300 text-sm text-gray-900 font-bold  rounded-xl transition duration-200"
-    >
-      Login
+    <div>   
+    <p className="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-100 hover:bg-gray-300 text-sm text-gray-900 font-bold  rounded-xl transition duration-200">
+      <Link to='/login'>Login</Link>
     </p>
-    </button>}
-    {user && <button onClick={handleLogout}>      
-    <p
-      className="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-100 hover:bg-gray-300 text-sm text-gray-900 font-bold  rounded-xl transition duration-200"
-    >
-      Logout
+    <p className="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-brand_dark hover:bg-yellow-900 text-sm text-white font-bold  rounded-xl transition duration-200">
+      Sing Up
     </p>
-    </button>}
-    {/* {!user && <button>      
-    <p
-      className="hidden lg:inline-block py-2 px-6 bg-brand_dark hover:bg-gray-800 text-sm text-white font-bold rounded-xl transition duration-200"
-      href="#"
-    >
-      Sign up
-    </p>
-    </button>} */}
+    </div>
   </nav>
   <div className="navbar-menu relative z-50 hidden">
     <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25" />
